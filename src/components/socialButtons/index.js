@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { LinkedIn } from './linkedin'
+import { Github } from './github'
 
 export class SocialButtons extends Component {
     constructor(props) {
@@ -8,7 +9,10 @@ export class SocialButtons extends Component {
 
     render() {
         return ( 
-            <LinkedIn></LinkedIn>
+            <React.Fragment>
+                <LinkedIn></LinkedIn>
+                <Github></Github>
+            </React.Fragment>
         )
     }
 }
