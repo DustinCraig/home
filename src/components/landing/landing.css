@@ -17,3 +17,12 @@
   font-size: 40px;
   margin-top: 0;
 }
+
+.SocialButtonsContainer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
