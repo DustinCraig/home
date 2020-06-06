@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../styles/main.css'
 
 export class SideBarItem extends Component {
     constructor(props) {
@@ -8,7 +9,7 @@ export class SideBarItem extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>{this.props.text}</div>    
+                <div className="sideBarItem"><a href="#">{this.props.text}</a></div>    
             </React.Fragment>
         )
     }

@@ -9,8 +9,11 @@ export class SideBar extends Component {
 
     render() { 
         return (
-            <div style={{position: 'fixed', height: '100%', width: 160, left: 0, top: 0}}>
-                <SideBarItem text="projects" />
+            <div style={{position: 'fixed', height: '100%', width: 160, left: 0, top: '2%'}}>
+                <SideBarItem text="Experience" />
+                <SideBarItem text="About" />
+                <SideBarItem text="Projects" />
+                <SideBarItem text="Contact" />
             </div>
         )
     }
