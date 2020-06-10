@@ -37,13 +37,16 @@ export class Landing extends Component {
     render() {
         return (
             <div className="LandingContainer" style={{backgroundImage: `url(${Image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat'}}>
+                <div className="containerLeft">
                 <SideBar />
-                <h2 className="LandingHeader">Dustin Craig</h2>   
-                <h3 className="LandingSubHeader">Software Engineer</h3>
-                <Container />
-                <footer className="SocialButtonsContainer"> 
-                    <SocialButtons />
-                </footer>
+                </div>
+                <div className="containerRight">
+                    <div className="containerContent">
+                        <div className="heading">Dustin Craig</div>
+                        <div className="subHeading">Software Engineer</div>
+                    </div>
+                </div>
+                
            </div>
         )
     }

@@ -35,12 +35,49 @@
     transform: scaleX(1);
 }
 
-.container {
+.containerLeft {
     position: fixed;
     height: 100%;
-    width: 40%;
+    width: 30%;
+    left: 0;
+    z-index: 100;
+}
+
+.containerRight {
+    position: fixed;
+    height: 100%;
+    width: 70%;
     right: 0;
     z-index: 100;
-    opacity: 0.4;
     background-color: black;
+    opacity: 0.3;
+}
+
+
+.containerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.containerContent > .heading {
+    color: white; 
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.containerContent > .subHeading {
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.left {
+    left: 0;
+}
+ 
+.right {
+    right: 0;
 }
