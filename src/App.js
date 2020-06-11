@@ -15,8 +15,8 @@ function App() {
 					<Landing /> 
 				</Route>	
 			</Switch>
-	</Router>
-  	)
+		</Router>
+  )
 }
 
 export default App;

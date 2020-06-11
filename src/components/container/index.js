@@ -4,11 +4,11 @@ import '../../styles/main.css'
 
 export class Container extends Component {
 
-    render() {
-        return (
-            <div className="container">
+  render() {
+    return (
+      <div className="container">
 
-            </div>
-        )
-    }
+      </div>
+    )
+  }
 }
