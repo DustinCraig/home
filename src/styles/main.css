@@ -49,8 +49,7 @@
     width: 70%;
     right: 0;
     z-index: 100;
-    background-color: black;
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -72,6 +71,16 @@
     color: white;
     font-size: 50px;
     margin-top: 0;
+}
+
+.easeIn {
+    right: 0;
+    transition: 1s;
+}
+
+.easeOut {
+    right: -2000px;
+    transition: 1s;
 }
 
 .left {
