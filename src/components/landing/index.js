@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { SocialButtons } from '../socialButtons'
 import { SideBar } from '../sideBar'
 import { Container } from '../container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { HIDESIDEBARWIDTH } from '../../constants'
 import Image from '../../assets/images/Landing.png'
 import './landing.css'
 
@@ -15,7 +18,23 @@ export class Landing extends Component {
       aboutOpen: false,
       projectsOpen: false,
       contactOpen: false,
+      sideBarOpen: true,
     }
+    this.updateDimensions.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions)
+  }
+
+  updateDimensions = () => {
+    if (window.innerWidth < HIDESIDEBARWIDTH)
+      this.setState({ sideBarOpen: false })
+    else this.setState({ sideBarOpen: true })
   }
 
   sideBarItemClick = (item) => {
@@ -64,6 +83,9 @@ export class Landing extends Component {
           projectsOpen: false,
           contactOpen: true,
         })
+        break
+      default:
+        break
     }
   }
 
@@ -79,15 +101,26 @@ export class Landing extends Component {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className='containerLeft'>
-          <SideBar sideBarItemClick={this.sideBarItemClick} />
-        </div>
+        {!this.state.sideBarOpen && (
+          <div className='hamburgerIconContainer'>
+            {/* For some reason this has to be styled inline? */}
+            <FontAwesomeIcon style={{ width: 40, height: 40 }} icon={faBars} />
+          </div>
+        )}
+
+        {this.state.sideBarOpen && (
+          <React.Fragment>
+            <div className='containerLeft'>
+              <SideBar sideBarItemClick={this.sideBarItemClick} />
+            </div>
+          </React.Fragment>
+        )}
         <div
           className={`containerRight ${
             this.state.homeOpen === true ? 'easeIn' : 'easeOut'
           }`}
         >
-          <div className='containerContent'>
+          <div className='containerContentCentered'>
             <div className='heading'>Dustin Craig</div>
             <div className='subHeading'>Software Engineer</div>
           </div>
@@ -106,7 +139,7 @@ export class Landing extends Component {
             this.state.aboutOpen === true ? 'easeIn' : 'easeOut'
           }`}
         >
-          <div className='containerContent'>
+          <div className='containerContentCentered'>
             <div className='heading'>About</div>
           </div>
         </div>
@@ -115,7 +148,7 @@ export class Landing extends Component {
             this.state.projectsOpen === true ? 'easeIn' : 'easeOut'
           }`}
         >
-          <div className='containerContent'>
+          <div className='containerContentCentered'>
             <div className='heading'>Projects</div>
           </div>
         </div>
@@ -124,7 +157,7 @@ export class Landing extends Component {
             this.state.contactOpen === true ? 'easeIn' : 'easeOut'
           }`}
         >
-          <div className='containerContent'>
+          <div className='containerContentCentered'>
             <div className='heading'>Contact</div>
           </div>
         </div>

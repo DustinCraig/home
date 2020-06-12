@@ -9,7 +9,14 @@ export class SideBar extends Component {
 
   render() {
     return (
-      <div style={{ height: '100%', width: '30%', left: 0, top: '2%' }}>
+      <div
+        style={{
+          height: '90%',
+          width: '30%',
+          left: 0,
+          top: '2%',
+        }}
+      >
         <SideBarItem
           sideBarItemClick={this.props.sideBarItemClick}
           text='Home'
