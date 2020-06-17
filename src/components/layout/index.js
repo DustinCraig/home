@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: 'black',
+    backgroundColor: '#2d3436',
   },
   navIconHide: {
     [theme.breakpoints.up('md')]: {
@@ -40,15 +40,11 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     height: '100%',
-    backgroundColor: 'rgba(0.5, 0.5, 0.5, 0.1);',
+    backgroundColor: '#2d3436',
   },
   content: {
     flexGrow: 1,
-    backgroundImage: `url(${Image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
+    backgroundColor: '#dfe6e9',
     padding: theme.spacing(3),
   },
   nested: {
@@ -59,6 +55,8 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItem: {
     fontSize: 25,
+    margin: 10,
+    color: 'white',
   },
   title: {
     flexGrow: 1,
