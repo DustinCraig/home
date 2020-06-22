@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import ToolBar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -9,10 +9,16 @@ import MenuList from '@material-ui/core/MenuList'
 import MenuItem from '@material-ui/core/MenuItem'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import IconButton from '@material-ui/core/IconButton'
+import About from '../about'
+import Experience from '../experience'
+import Projects from '../projects'
 import { makeStyles } from '@material-ui/core/styles'
-import Image from '../../assets/images/Landing.png'
+import { BACKGROUNDCOLOR } from '../../constants'
 
 const drawerWidth = 200
+const ABOUT = 'about'
+const EXPERIENCE = 'experience'
+const PROJECTS = 'projects'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,9 +49,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#2d3436',
   },
   content: {
-    flexGrow: 1,
-    backgroundColor: '#dfe6e9',
-    padding: theme.spacing(3),
+    flexGrow: 2,
+    backgroundColor: BACKGROUNDCOLOR,
+    height: '100%',
   },
   nested: {
     paddingLeft: theme.spacing(4),
@@ -63,9 +69,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function Layout() {
+function Layout() {
   const classes = useStyles()
   const [mobileOpen, openMobile] = useState(false)
+  const [viewingContent, setViewingContent] = useState(ABOUT)
 
   const drawer = (
     <div>
@@ -73,10 +80,24 @@ export default function Layout() {
         <div className={classes.toolbar} />
       </Hidden>
       <MenuList>
-        <MenuItem className={classes.menuItem}>Home</MenuItem>
-        <MenuItem className={classes.menuItem}>About</MenuItem>
-        <MenuItem className={classes.menuItem}>Experience</MenuItem>
-        <MenuItem className={classes.menuItem}>Projects</MenuItem>
+        <MenuItem
+          className={classes.menuItem}
+          onClick={() => setViewingContent(ABOUT)}
+        >
+          About
+        </MenuItem>
+        <MenuItem
+          className={classes.menuItem}
+          onClick={() => setViewingContent(EXPERIENCE)}
+        >
+          Experience
+        </MenuItem>
+        <MenuItem
+          className={classes.menuItem}
+          onClick={() => setViewingContent(PROJECTS)}
+        >
+          Projects
+        </MenuItem>
       </MenuList>
     </div>
   )
@@ -100,6 +121,7 @@ export default function Layout() {
             </Typography>
           </ToolBar>
         </AppBar>
+
         {/* Side Drawer */}
         <nav className={classes.drawer}>
           <Hidden smDown implementation='css'>
@@ -112,11 +134,17 @@ export default function Layout() {
             </Drawer>
           </Hidden>
         </nav>
-        <main className={classes.content}>
+
+        {/* Main Content */}
+        <div className={classes.content}>
           <div className={classes.toolbar} />
-          <Typography paragraph>Hello fadfasdfsafasdfadsfadfadsf</Typography>
-        </main>
+          {viewingContent === ABOUT && <About />}
+          {viewingContent === EXPERIENCE && <Experience />}
+          {viewingContent === PROJECTS && <Projects />}
+        </div>
       </div>
     </Fragment>
   )
 }
+
+export default Layout
