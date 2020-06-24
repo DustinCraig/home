@@ -6,17 +6,31 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    // width: '50%',
+    width: 700,
+    margin: 30,
+  },
+  title: {
+    fontSize: 25,
   },
 }))
 
-export default function JobCard() {
+export default function JobCard({ company, title, bulletPoints }) {
   const classes = useStyles()
   return (
     <Fragment>
       <Card className={classes.card} variant='outline'>
         <CardContent>
-          <Typography>Tsfsdfsdfsdfsdfsfsdfsdfsdfest</Typography>
+          <Typography className={classes.title}>
+            <b>{company}</b> - {title}
+          </Typography>
+          <hr />
+          <ul>
+            {bulletPoints.map((b) => (
+              <li>
+                <Typography paragraph>{b}</Typography>
+              </li>
+            ))}
+          </ul>
         </CardContent>
       </Card>
     </Fragment>
