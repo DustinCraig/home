@@ -60,8 +60,8 @@ export default function About() {
           <CardContent>
             <Typography className={classes.title}>
               <b>Hello!</b> My name is Dustin and I am currently a college
-              senior studying Computer Science. I am gearing my electives toward
-              the fields of <u>Software Engineering</u>, <u>Data Science</u> and{' '}
+              senior studying Computer Science. I am highly interested in the
+              fields of <u>Software Engineering</u>, <u>Data Science</u> and{' '}
               <u>Computer Graphics</u>. I have a great passion for what I do and
               I take a large amount of pride in my work. I am always looking for
               new opportunities to further my knowledge.

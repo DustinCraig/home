@@ -13,7 +13,7 @@ import About from '../about'
 import Experience from '../experience'
 import Projects from '../projects'
 import { makeStyles } from '@material-ui/core/styles'
-import { BACKGROUNDCOLOR } from '../../constants'
+import { BACKGROUNDCOLOR, SECONDARYCOLOR } from '../../constants'
 
 const drawerWidth = 200
 const ABOUT = 'about'
@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#2d3436',
+    backgroundColor: '#47a8d1',
+    color: '#333333',
   },
   navIconHide: {
     [theme.breakpoints.up('md')]: {
@@ -46,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     height: '100%',
-    backgroundColor: '#2d3436',
+    backgroundColor: SECONDARYCOLOR,
+    color: '#333333',
   },
   content: {
     flexGrow: 2,
@@ -62,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   menuItem: {
     fontSize: 25,
     margin: 10,
-    color: 'white',
+    color: '#333333',
   },
   title: {
     flexGrow: 1,
