@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: 700,
+    width: '60%',
     margin: 30,
   },
   title: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function JobCard({ company, title, bulletPoints }) {
+export default function JobCard({ company, title, dates, bulletPoints }) {
   const classes = useStyles()
   return (
     <Fragment>
@@ -22,6 +22,9 @@ export default function JobCard({ company, title, bulletPoints }) {
         <CardContent>
           <Typography className={classes.title}>
             <b>{company}</b> - {title}
+          </Typography>
+          <Typography paragraph>
+            {dates[0]} - {dates[1]}
           </Typography>
           <hr />
           <ul>

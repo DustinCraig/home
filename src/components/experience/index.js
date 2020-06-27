@@ -5,7 +5,7 @@ import { BACKGROUNDCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
   'Maintained and developed the internal Radiology CoreLab web app using React/Redux.',
-  'Worked on a web app using WebGL and React to: visualize aneurysms in 3D from a medical scan image and perform volume estimation.',
+  'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image and perform volume estimation.',
 ]
 
 const FLIR_BULLETPOINTS = [
@@ -36,16 +36,19 @@ export default function Experience() {
       <JobCard
         title={'Software Engineer'}
         company={'Oculus Imaging'}
+        dates={['April 2020', 'Present']}
         bulletPoints={OI_BULLETPOINTS}
       />
       <JobCard
         title={'Software Engineering Intern'}
         company={'FLIR Detection'}
+        dates={['February 2019', 'January 2020']}
         bulletPoints={FLIR_BULLETPOINTS}
       />
       <JobCard
         title={'Software Engineering Intern'}
         company={'Prevo Technologies'}
+        dates={['August 2018', 'December 2018']}
         bulletPoints={PREVO_BULLETPOINTS}
       />
     </Grid>
