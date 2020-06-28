@@ -9,19 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-image: url('./assets/images/Landing.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 body > #root > div {
   height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

@@ -17,9 +17,10 @@ export class Landing extends Component {
   }
 
   render() {
+    const classes = useStyles()
     return (
       <div
-        className='LandingContainer'
+        className="LandingContainer"
         style={{
           backgroundImage: `url(${Image})`,
           backgroundSize: 'cover',

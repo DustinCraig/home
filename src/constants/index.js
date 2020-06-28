@@ -1,3 +1,5 @@
 export const HIDESIDEBARWIDTH = 1000 /* Screens below this width will have a hamburger menu sidebar */
-export const BACKGROUNDCOLOR = '#c6c9cf' // '#bcc2c4'
-export const SECONDARYCOLOR = '#ddd'
+export const BACKGROUNDCOLOR = '#333' // '#bcc2c4'
+export const SECONDARYCOLOR = '#dadada'
+export const APPBARCOLOR = '#049a9e'
+export const TEXTCOLOR = '#eeeeee'
