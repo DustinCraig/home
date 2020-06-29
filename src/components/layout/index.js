@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import ToolBar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -72,36 +72,38 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-function Layout() {
+export default function Layout() {
   const classes = useStyles()
   const [mobileOpen, openMobile] = useState(false)
   const [viewingContent, setViewingContent] = useState(ABOUT)
+  const [scrollPos, setScrollPos] = useState(window.pageYOffset)
+
+  /* Watch scroll position */
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrollPos(window.pageYOffset)
+    })
+  })
 
   return (
     <Fragment>
       <CssBaseline />
       <div className={classes.root}>
         {/* AppBar */}
-        <AppBar position="fixed" className={classes.appBar}>
-          <ToolBar>
-            <IconButton
-              edge="start"
-              className={classes.navIconHide}
-              color="inherit"
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h5" className={classes.title}>
-              Dustin Craig
-            </Typography>
-          </ToolBar>
-        </AppBar>
+        {scrollPos > -1 && (
+          <AppBar position="fixed" className={classes.appBar}>
+            <ToolBar>
+              <Typography variant="h5" className={classes.title}>
+                Dustin Craig
+              </Typography>
+            </ToolBar>
+          </AppBar>
+        )}
         {/*********/}
 
         {/* Main Content */}
         <div className={classes.content}>
-          <div className={classes.toolbar} />
+          {scrollPos > -1 && <div className={classes.toolbar} />}
           <BigPicture />
           <About />
           <Experience />
@@ -111,5 +113,3 @@ function Layout() {
     </Fragment>
   )
 }
-
-export default Layout

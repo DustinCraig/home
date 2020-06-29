@@ -5,7 +5,7 @@ import Image from '../../assets/images/avatar.jpeg'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import { SocialButtons } from '../socialButtons'
-import { BACKGROUNDCOLOR, TEXTCOLOR } from '../../constants'
+import { BACKGROUNDCOLOR, TEXTCOLOR, HEADERCOLOR } from '../../constants'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 
@@ -25,11 +25,16 @@ const useStyles = makeStyles((theme) => ({
   card: {
     width: '70%',
     margin: 30,
-    backgroundColor: 'rgba(0, 0, 0, 0)',
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
   },
   title: {
     //fontSize: 25,
     color: TEXTCOLOR,
+  },
+  header: {
+    marginTop: 60,
+    color: HEADERCOLOR,
+    fontSize: 60,
   },
 }))
 
@@ -46,6 +51,11 @@ export default function About() {
         justify="center"
         className={classes.grid}
       >
+        <center>
+          <Typography className={classes.header} variant="h3">
+            About Me
+          </Typography>
+        </center>
         <Avatar alt="Dustin Craig" src={Image} className={classes.avatar} />
 
         <Card className={classes.card} variant="outline">
@@ -53,8 +63,8 @@ export default function About() {
             <Typography className={classes.title}>
               <b>Hello!</b> My name is Dustin and I am currently a college senior studying Computer
               Science. I am highly interested in the fields of <u>Software Engineering</u>,{' '}
-              <u>Data Science</u> and <u>Computer Graphics</u>. I have a great passion for what I do
-              and I take a large amount of pride in my work. I am always looking for new
+              <u>Game Development</u> and <u>Computer Graphics</u>. I have a great passion for what
+              I do and I take a large amount of pride in my work. I am always looking for new
               opportunities to further my knowledge.
               <br />
               <br />I have professional experience with the following technologies:
@@ -70,7 +80,10 @@ export default function About() {
               <br />
               <center>
                 Feel free to contact me at{' '}
-                <a href="mailto:dustincraig16@gmail.com">dustincraig16@gmail.com</a>!
+                <a href="mailto:dustincraig16@gmail.com" style={{ color: TEXTCOLOR }}>
+                  dustincraig16@gmail.com
+                </a>
+                !
               </center>
             </Typography>
           </CardContent>

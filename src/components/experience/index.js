@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 import JobCard from './jobCard'
-import { BACKGROUNDCOLOR } from '../../constants'
+import { makeStyles } from '@material-ui/core/styles'
+
+import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
   'Maintained and developed the internal Radiology CoreLab web app using React/Redux.',
@@ -20,18 +23,31 @@ const PREVO_BULLETPOINTS = [
   'Refreshed the menus, layout, icons and color-scheme which involved changes to CSS, HTML, JavaScript and Java servlets.',
 ]
 
+const useStyles = makeStyles((theme) => ({
+  header: {
+    marginTop: 60,
+    color: HEADERCOLOR,
+    fontSize: 60,
+  },
+}))
+
 export default function Experience() {
   // return <JobCard />
+  const classes = useStyles()
+
   return (
     <Grid
       xs={12}
       container
       spacing={0}
-      direction='column'
-      alignItems='center'
-      justify='center'
+      direction="column"
+      alignItems="center"
+      justify="center"
       style={{ backgroundColor: BACKGROUNDCOLOR }}
     >
+      <Typography className={classes.header} variant="h3">
+        Experience
+      </Typography>
       <br />
       <JobCard
         title={'Software Engineer'}
