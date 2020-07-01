@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    width: '60%',
+    width: '70%',
     margin: 30,
     backgroundColor: 'rgba(0, 0,0 ,0.1)',
     color: TEXTCOLOR,

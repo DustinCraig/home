@@ -2,7 +2,7 @@ import React from 'react'
 import Image from '../../assets/images/Landing.png'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
-import { BACKGROUNDCOLOR, TEXTCOLOR } from '../../constants'
+import { TEXTCOLOR } from '../../constants'
 
 const useStyles = makeStyles((theme) => ({
   text: {

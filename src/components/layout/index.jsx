@@ -67,8 +67,13 @@ const useStyles = makeStyles((theme) => ({
     margin: 10,
     color: '#333333',
   },
+  titleFirst: {},
   title: {
-    flexGrow: 1,
+    marginLeft: '7%',
+  },
+  link: {
+    color: TEXTCOLOR,
+    textDecoration: 'none',
   },
 }))
 
@@ -76,38 +81,56 @@ export default function Layout() {
   const classes = useStyles()
   const [mobileOpen, openMobile] = useState(false)
   const [viewingContent, setViewingContent] = useState(ABOUT)
-  const [scrollPos, setScrollPos] = useState(window.pageYOffset)
-
-  /* Watch scroll position */
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setScrollPos(window.pageYOffset)
-    })
-  })
 
   return (
     <Fragment>
       <CssBaseline />
       <div className={classes.root}>
         {/* AppBar */}
-        {scrollPos > -1 && (
-          <AppBar position="fixed" className={classes.appBar}>
-            <ToolBar>
-              <Typography variant="h5" className={classes.title}>
+        <AppBar position="fixed" className={classes.appBar}>
+          <ToolBar>
+            <Typography variant="h5" className={classes.titleFirst}>
+              <a href="#" className={classes.link}>
                 Dustin Craig
+              </a>
+            </Typography>
+            <Hidden smDown>
+              <Typography variant="h5" className={classes.title}>
+                <a href="#about" className={classes.link}>
+                  About
+                </a>
               </Typography>
-            </ToolBar>
-          </AppBar>
-        )}
+              <Typography variant="h5" className={classes.title}>
+                <a href="#experience" className={classes.link}>
+                  Experience
+                </a>
+              </Typography>
+              <Typography variant="h5" className={classes.title}>
+                <a href="#projects" className={classes.link}>
+                  Projects
+                </a>
+              </Typography>
+            </Hidden>
+          </ToolBar>
+        </AppBar>
         {/*********/}
 
         {/* Main Content */}
         <div className={classes.content}>
-          {scrollPos > -1 && <div className={classes.toolbar} />}
+          <div className={classes.toolbar} />
           <BigPicture />
-          <About />
-          <Experience />
-          {/* <Projects /> */}
+          <div id="about">
+            <About />
+          </div>
+
+          <div id="experience">
+            <Experience />
+          </div>
+
+          <div id="projects">
+            <Projects />
+          </div>
+          {/*  */}
         </div>
       </div>
     </Fragment>
