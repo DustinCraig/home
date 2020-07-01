@@ -61,6 +61,13 @@ export default function Projects() {
                 link={'http://web.eecs.utk.edu/~dcraig14/2bN9gJ0sx3U/finalp.html'}
               />
             </Grid>
+            <Grid item>
+              <ProjectCard
+                title={'This website!'}
+                description={'I built this website using React.JS and Material-UI'}
+                link={'https://dustincraig.github.io/home/#projects'}
+              />
+            </Grid>
           </Grid>
         </center>
       </Grid>
