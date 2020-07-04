@@ -69,7 +69,7 @@ export default function Projects() {
                 description={
                   'I built this website using React.JS and Material-UI'
                 }
-                link={'https://dustincraig.github.io/home/#projects'}
+                link={'https://github.com/DustinCraig/home'}
               />
             </Grid>
           </Grid>
