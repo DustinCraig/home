@@ -26,20 +26,20 @@ export default function Projects() {
       <Grid
         xs={12}
         container
-        direction="column"
-        alignItems="center"
-        justify="center"
+        direction='column'
+        alignItems='center'
+        justify='center'
         className={classes.grid}
       >
         <center>
-          <Typography className={classes.header} variant="h3">
+          <Typography className={classes.header} variant='h3'>
             Projects
           </Typography>
-          <Grid className={classes.grid} container justify="center" spacing={4}>
+          <Grid className={classes.grid} container justify='center' spacing={4}>
             <Grid item>
               <ProjectCard
                 title={'Paper in the Wind'}
-                description={'Unity game being created by a friend and I.'}
+                description={'Unity game being created by a friend and I'}
                 link={'https://dustincraig.github.io/PaperInTheWind/'}
               />
             </Grid>
@@ -47,7 +47,7 @@ export default function Projects() {
               <ProjectCard
                 title={'GammonsReview'}
                 description={
-                  'Website created with HTML/JS/CSS I made for a friend to post his movie reviews'
+                  'Website created with ASP.NET Core I made for a friend to post his movie reviews'
                 }
                 link={'http://www.thegammonsreview.com/'}
               />
@@ -58,14 +58,18 @@ export default function Projects() {
                 description={
                   'My final project from the computer graphics course at school. Built using HTML/JS/WebGL'
                 }
-                link={'http://web.eecs.utk.edu/~dcraig14/2bN9gJ0sx3U/finalp.html'}
+                link={
+                  'http://web.eecs.utk.edu/~dcraig14/2bN9gJ0sx3U/finalp.html'
+                }
               />
             </Grid>
             <Grid item>
               <ProjectCard
                 title={'This website!'}
-                description={'I built this website using React.JS and Material-UI'}
-                link={'https://dustincraig.github.io/home/#projects'}
+                description={
+                  'I built this website using React.JS and Material-UI'
+                }
+                link={'https://github.com/DustinCraig/home'}
               />
             </Grid>
           </Grid>

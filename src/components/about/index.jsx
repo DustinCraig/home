@@ -11,8 +11,8 @@ import CardContent from '@material-ui/core/CardContent'
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(50),
-    height: theme.spacing(50),
+    width: theme.spacing(35),
+    height: theme.spacing(35),
     marginTop: 35,
     marginBottom: 20,
   },
@@ -46,28 +46,30 @@ export default function About() {
         xs={12}
         container
         spacing={0}
-        direction="column"
-        alignItems="center"
-        justify="center"
+        direction='column'
+        alignItems='center'
+        justify='center'
         className={classes.grid}
       >
         <center>
-          <Typography className={classes.header} variant="h3">
+          <Typography className={classes.header} variant='h3'>
             About Me
           </Typography>
         </center>
-        <Avatar alt="Dustin Craig" src={Image} className={classes.avatar} />
+        <Avatar alt='Dustin Craig' src={Image} className={classes.avatar} />
 
-        <Card className={classes.card} variant="outline">
+        <Card className={classes.card} variant='outline'>
           <CardContent>
             <Typography className={classes.title}>
-              <b>Hello!</b> My name is Dustin and I am currently a college senior studying Computer
-              Science. I am highly interested in the fields of <u>Software Engineering</u>,{' '}
-              <u>Game Development</u> and <u>Computer Graphics</u>. I have a great passion for what
-              I do and I take a large amount of pride in my work. I am always looking for new
-              opportunities to further my knowledge.
+              <b>Hello!</b> My name is Dustin and I am currently a college
+              senior studying Computer Science. I am highly interested in the
+              fields of <u>Software Engineering</u>, <u>Game Development</u> and{' '}
+              <u>Computer Graphics</u>. I have a great passion for what I do and
+              I take a large amount of pride in my work. I am always looking for
+              new opportunities to further my knowledge.
               <br />
-              <br />I have professional experience with the following technologies:
+              <br />I have professional experience with the following
+              technologies:
               <ul>
                 <li>HTML/CSS/JavaScript/ES6+</li>
                 <li>React JS</li>
@@ -80,7 +82,10 @@ export default function About() {
               <br />
               <center>
                 Feel free to contact me at{' '}
-                <a href="mailto:dustincraig16@gmail.com" style={{ color: TEXTCOLOR }}>
+                <a
+                  href='mailto:dustincraig16@gmail.com'
+                  style={{ color: TEXTCOLOR }}
+                >
                   dustincraig16@gmail.com
                 </a>
                 !
