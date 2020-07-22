@@ -7,13 +7,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
-<<<<<<< HEAD
   'Maintained and developed the internal Radiology CoreLab web app using React/Redux.',
   'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image using various image processing techniques, erosion, and volume estimation.',
-=======
-  'Maintained and developed the internal Radiology CoreLab web app using React/Redux-Saga.',
-  'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image and perform volume estimation.',
->>>>>>> af3c7bab0033d1abb94f694c65f57e4f9e7f4b46
 ]
 
 const FLIR_BULLETPOINTS = [
@@ -45,12 +40,12 @@ export default function Experience() {
       xs={12}
       container
       spacing={0}
-      direction='column'
-      alignItems='center'
-      justify='center'
+      direction="column"
+      alignItems="center"
+      justify="center"
       style={{ backgroundColor: BACKGROUNDCOLOR }}
     >
-      <Typography className={classes.header} variant='h3'>
+      <Typography className={classes.header} variant="h3">
         Experience
       </Typography>
       <br />
