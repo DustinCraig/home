@@ -8,7 +8,7 @@ import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
   'Maintained and developed the internal Radiology CoreLab web app using React/Redux-Saga.',
-  'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image and perform volume estimation.',
+  'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image using various image processing techniques, erosion, and volume estimation.',
 ]
 
 const FLIR_BULLETPOINTS = [

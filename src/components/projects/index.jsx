@@ -39,7 +39,7 @@ export default function Projects() {
             <Grid item>
               <ProjectCard
                 title={'Paper in the Wind'}
-                description={'Unity game being created by a friend and I'}
+                description={'Unity game using C# deployed to WebGL'}
                 link={'https://dustincraig.github.io/PaperInTheWind/'}
               />
             </Grid>
@@ -54,9 +54,9 @@ export default function Projects() {
             </Grid>
             <Grid item>
               <ProjectCard
-                title={'Computer Graphics: Final Project'}
+                title={'Final Project'}
                 description={
-                  'My final project from the computer graphics course at school. Built using HTML/JS/WebGL'
+                  'My final project from the computer graphics course at my university. Built using HTML/JS/WebGL'
                 }
                 link={
                   'http://web.eecs.utk.edu/~dcraig14/2bN9gJ0sx3U/finalp.html'

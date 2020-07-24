@@ -61,15 +61,18 @@ export default function About() {
         <Card className={classes.card} variant='outline'>
           <CardContent>
             <Typography className={classes.title}>
-              <b>Hello!</b> My name is Dustin and I am currently a college
-              senior studying Computer Science. I am highly interested in the
-              fields of <u>Software Engineering</u>, <u>Game Development</u> and{' '}
-              <u>Computer Graphics</u>. I have a great passion for what I do and
-              I take a large amount of pride in my work. I am always looking for
-              new opportunities to further my knowledge.
-              <br />
-              <br />I have professional experience with the following
-              technologies:
+              <Typography paragraph>
+                <b>Hello!</b> My name is Dustin and I am currently a college
+                senior studying Computer Science. I am highly interested in the
+                fields of <u>Software Engineering</u>, <u>Game Development</u>{' '}
+                and <u>Computer Graphics</u>. I have a great passion for what I
+                do and I take a large amount of pride in my work. I am always
+                looking for new opportunities to further my knowledge.
+                <br />
+                <br />I have professional experience with the following
+                technologies:
+              </Typography>
+
               <ul>
                 <li>HTML/CSS/JavaScript/ES6+</li>
                 <li>React JS</li>
@@ -79,6 +82,15 @@ export default function About() {
                 <li>C++</li>
                 <li>.NET C#</li>
               </ul>
+              <h2 style={{ textAlign: 'center' }}>
+                <a
+                  href='https://docs.google.com/document/d/1n2BAmpFuUchw4EOFzBa52wLKmG3VN9_oxa15QSwzIwQ/edit?usp=sharing'
+                  style={{ color: HEADERCOLOR }}
+                  target='_blank'
+                >
+                  Full Resume
+                </a>
+              </h2>
               <br />
               <center>
                 Feel free to contact me at{' '}
@@ -94,9 +106,7 @@ export default function About() {
           </CardContent>
         </Card>
         <SocialButtons />
-        <br />
-        <br />
-        <br />
+        <div stlye={{ marginBottom: 10 }} />
       </Grid>
     </div>
   )

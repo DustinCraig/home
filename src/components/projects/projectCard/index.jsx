@@ -31,18 +31,25 @@ export default function ProjectCard({ title, link, description }) {
   return (
     <Fragment>
       <a href={link} style={{ textDecoration: 'none' }}>
-        <Card className={classes.card} variant="outline">
+        <Card className={classes.card} variant='outline'>
           <CardActionArea>
-            {title === 'Paper in the Wind' && <CardMedia className={classes.media} image={PITW} />}
+            {title === 'Paper in the Wind' && (
+              <CardMedia className={classes.media} image={PITW} />
+            )}
             {title === 'GammonsReview' && (
               <CardMedia className={classes.media} image={GAMMONSREVIEW} />
             )}
-            {title === 'Computer Graphics: Final Project' && (
+            {title === 'Final Project' && (
               <CardMedia className={classes.media} image={GRAPHICS} />
             )}
           </CardActionArea>
           <CardContent>
-            <Typography className={classes.title} gutterBottom variant="h4" component="h2">
+            <Typography
+              className={classes.title}
+              gutterBottom
+              variant='h4'
+              component='h2'
+            >
               {title}
             </Typography>
             <Typography>{description}</Typography>
