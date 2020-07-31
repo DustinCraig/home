@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function Experience() {
-  // return <JobCard />
   const classes = useStyles()
 
   return (
