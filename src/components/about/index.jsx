@@ -64,9 +64,9 @@ export default function About() {
               <Typography paragraph>
                 <b>Hello!</b> My name is Dustin and I am currently a college
                 senior studying Computer Science. I am highly interested in the
-                fields of <u>Software Engineering</u>, <u>Game Development</u>{' '}
-                and <u>Computer Graphics</u>. I have a great passion for what I
-                do and I take a large amount of pride in my work. I am always
+                fields of <u>Software Engineering</u>, <u>Data Engineering</u>{' '}
+                and <u>Data Science</u>. I have a great passion for what I do
+                and I take a large amount of pride in my work. I am always
                 looking for new opportunities to further my knowledge.
                 <br />
                 <br />I have professional experience with the following
