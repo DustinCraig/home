@@ -46,31 +46,29 @@ export default function About() {
         xs={12}
         container
         spacing={0}
-        direction='column'
-        alignItems='center'
-        justify='center'
+        direction="column"
+        alignItems="center"
+        justify="center"
         className={classes.grid}
       >
         <center>
-          <Typography className={classes.header} variant='h3'>
+          <Typography className={classes.header} variant="h3">
             About Me
           </Typography>
         </center>
-        <Avatar alt='Dustin Craig' src={Image} className={classes.avatar} />
+        <Avatar alt="Dustin Craig" src={Image} className={classes.avatar} />
 
-        <Card className={classes.card} variant='outline'>
+        <Card className={classes.card} variant="outline">
           <CardContent>
             <Typography className={classes.title}>
               <Typography paragraph>
-                <b>Hello!</b> My name is Dustin and I am currently a college
-                senior studying Computer Science. I am highly interested in the
-                fields of <u>Software Engineering</u>, <u>Data Engineering</u>{' '}
-                and <u>Data Science</u>. I have a great passion for what I do
-                and I take a large amount of pride in my work. I am always
-                looking for new opportunities to further my knowledge.
+                <b>Hello!</b> My name is Dustin and I am currently a college senior studying
+                Computer Science. I am highly interested in the fields of{' '}
+                <u>Software Engineering</u>, <u>Computer Graphics</u> and <u>Data Science</u>. I
+                have a great passion for what I do and I take a large amount of pride in my work. I
+                am always looking for new opportunities to further my knowledge.
                 <br />
-                <br />I have professional experience with the following
-                technologies:
+                <br />I have professional experience with the following technologies:
               </Typography>
 
               <ul>
@@ -84,9 +82,9 @@ export default function About() {
               </ul>
               <h2 style={{ textAlign: 'center' }}>
                 <a
-                  href='https://docs.google.com/document/d/1n2BAmpFuUchw4EOFzBa52wLKmG3VN9_oxa15QSwzIwQ/edit?usp=sharing'
+                  href="https://docs.google.com/document/d/1n2BAmpFuUchw4EOFzBa52wLKmG3VN9_oxa15QSwzIwQ/edit?usp=sharing"
                   style={{ color: HEADERCOLOR }}
-                  target='_blank'
+                  target="_blank"
                 >
                   Full Resume
                 </a>
@@ -94,10 +92,7 @@ export default function About() {
               <br />
               <center>
                 Feel free to contact me at{' '}
-                <a
-                  href='mailto:dustincraig16@gmail.com'
-                  style={{ color: TEXTCOLOR }}
-                >
+                <a href="mailto:dustincraig16@gmail.com" style={{ color: TEXTCOLOR }}>
                   dustincraig16@gmail.com
                 </a>
                 !
