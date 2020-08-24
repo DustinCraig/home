@@ -7,13 +7,14 @@ import { makeStyles } from '@material-ui/core/styles'
 import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
-  'Maintained and developed the internal Radiology CoreLab web app using React/Redux-Saga.',
-  'Worked on a web app using WebGL and React to visualize aneurysms in 3D from a medical scan image using various image processing techniques, erosion, and volume estimation.',
+  'Worked on a web app to efficiently analyze angiographic images and perform 3D volume reconstruction using various image processing techniques and computer graphics algorithms.',
+  'Maintained and developed the internal Radiology CoreLab web app.',
+  'Employed workable software solutions on a system that has processed over 1,000,000 medical images.',
 ]
 
 const FLIR_BULLETPOINTS = [
-  'Developed reliable, internal software in a wide breadth of technologies including: .NET with C#, Angular 7 and Typescript, C++, and Python.',
-  'Software projects were designed to either improve workflow of production or collect data to be used in manufacturing engineering.',
+  'Spearheaded various software projects to either improve workflow of production or collect data to be used in manufacturing engineering.',
+  'Updated automation code to greatly improve reliability and maintainability.',
   'Unified data entry for production tests to be done within the internal web application.',
   'Helped with refactoring the code behind the automation processes to improve reliability of data.',
 ]
@@ -39,12 +40,12 @@ export default function Experience() {
       xs={12}
       container
       spacing={0}
-      direction='column'
-      alignItems='center'
-      justify='center'
+      direction="column"
+      alignItems="center"
+      justify="center"
       style={{ backgroundColor: BACKGROUNDCOLOR }}
     >
-      <Typography className={classes.header} variant='h3'>
+      <Typography className={classes.header} variant="h3">
         Experience
       </Typography>
       <br />

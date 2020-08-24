@@ -74,6 +74,7 @@ export default function About() {
               <ul>
                 <li>HTML/CSS/JavaScript/ES6+</li>
                 <li>React JS</li>
+                <li>WebGL</li>
                 <li>TypeScript</li>
                 <li>Angular JS/7+</li>
                 <li>Python</li>
