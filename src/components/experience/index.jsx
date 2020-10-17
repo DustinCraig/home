@@ -20,7 +20,7 @@ const FLIR_BULLETPOINTS = [
 ]
 
 const PREVO_BULLETPOINTS = [
-  'Updating the look and feel of their electronic document and records management system: TechDoc.',
+  'Updated the look and feel of their electronic document and records management system: TechDoc.',
   'Refreshed the menus, layout, icons and color-scheme which involved changes to CSS, HTML, JavaScript and Java servlets.',
 ]
 
