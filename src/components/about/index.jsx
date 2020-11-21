@@ -65,21 +65,22 @@ export default function About() {
                 <b>Hello!</b> My name is Dustin and I am currently a college senior studying
                 Computer Science. I am highly interested in the fields of{' '}
                 <u>Software Engineering</u>, <u>Computer Graphics</u> and <u>Data Science</u>. I
-                have a great passion for what I do and I take a large amount of pride in my work. I
-                am always looking for new opportunities to further my knowledge.
+                have a great passion for what I do and I take a large amount of pride in my work. 
+                I am looking for opportunities to gain experience and solve interesting problems.
                 <br />
                 <br />I have professional experience with the following technologies:
               </Typography>
 
               <ul>
-                <li>HTML/CSS/JavaScript/ES6+</li>
-                <li>React JS</li>
+                <li>React.js</li>
                 <li>WebGL</li>
                 <li>TypeScript</li>
                 <li>Angular JS/7+</li>
                 <li>Python</li>
-                <li>C++</li>
-                <li>.NET C#</li>
+                <li>C/C++</li>
+                <li>.NET Framework using C#</li>
+                <li>CouchDB</li>
+                <li>SQL</li>
               </ul>
               <h2 style={{ textAlign: 'center' }}>
                 <a

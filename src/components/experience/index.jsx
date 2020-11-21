@@ -40,12 +40,12 @@ export default function Experience() {
       xs={12}
       container
       spacing={0}
-      direction="column"
-      alignItems="center"
-      justify="center"
+      direction='column'
+      alignItems='center'
+      justify='center'
       style={{ backgroundColor: BACKGROUNDCOLOR }}
     >
-      <Typography className={classes.header} variant="h3">
+      <Typography className={classes.header} variant='h3'>
         Experience
       </Typography>
       <br />
