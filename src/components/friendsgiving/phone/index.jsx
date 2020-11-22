@@ -42,7 +42,7 @@ function FriendsGivingPhone({classes}) {
         })
     }
     return (
-        <>
+        <div stlye={{height: '90%'}}>
         {(submitted === false) && (
             <div>
                 <div style={{height: 50}}>
@@ -59,11 +59,11 @@ function FriendsGivingPhone({classes}) {
         {submitted && (
             <div>
                 <div style={{height: 50}}>
-                    <h3 className={classes.header}>Your secret santa is {secretSanta}</h3>
+                    <h3 className={classes.header}>You are {secretSanta}'s secret santa</h3>
                 </div>
             </div>
         )}
-        </>
+        </div>
     )
 }
 
