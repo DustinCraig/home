@@ -10,15 +10,16 @@ function App() {
     <>
         <Router>
             <Switch>
-                <Route path="/server">
+                <Route path="/home/server">
                     <FriendsGivingServer />
                 </Route>
-                <Route path="/phone">
-                    <FriendsGivingPhone />
+                <Route path="/home/phone">
                 </Route>
                 <Route path="/">
                     <Fragment>
-                        <Landing />
+                    <FriendsGivingPhone />
+
+                        {/* <Landing /> */}
                     </Fragment>
                 </Route>
             </Switch>
