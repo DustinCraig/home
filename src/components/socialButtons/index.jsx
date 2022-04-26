@@ -7,10 +7,8 @@ export class SocialButtons extends Component {
   render() {
     return (
       <React.Fragment>
-        <Grid xs={6}>
-          <LinkedIn></LinkedIn>
-          <Github></Github>
-        </Grid>
+        <LinkedIn></LinkedIn>
+        <Github></Github>
       </React.Fragment>
     )
   }

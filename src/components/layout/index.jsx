@@ -14,7 +14,12 @@ import Experience from '../experience'
 import Projects from '../projects'
 import BigPicture from '../bigPicture'
 import { makeStyles } from '@material-ui/core/styles'
-import { BACKGROUNDCOLOR, SECONDARYCOLOR, APPBARCOLOR, TEXTCOLOR } from '../../constants'
+import {
+  BACKGROUNDCOLOR,
+  SECONDARYCOLOR,
+  APPBARCOLOR,
+  TEXTCOLOR,
+} from '../../constants'
 
 const drawerWidth = 200
 const ABOUT = 'about'
@@ -25,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexGrow: 1,
-    height: '100%',
+    height: '100vh',
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -41,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
-      height: '100%',
+      height: '100vh',
     },
   },
   toolbar: theme.mixins.toolbar,
@@ -87,26 +92,26 @@ export default function Layout() {
       <CssBaseline />
       <div className={classes.root}>
         {/* AppBar */}
-        <AppBar position="fixed" className={classes.appBar}>
+        <AppBar position='fixed' className={classes.appBar}>
           <ToolBar>
-            <Typography variant="h5" className={classes.titleFirst}>
-              <a href="#" className={classes.link}>
+            <Typography variant='h5' className={classes.titleFirst}>
+              <a href='#' className={classes.link}>
                 Dustin Craig
               </a>
             </Typography>
             <Hidden smDown>
-              <Typography variant="h5" className={classes.title}>
-                <a href="#about" className={classes.link}>
+              <Typography variant='h5' className={classes.title}>
+                <a href='#about' className={classes.link}>
                   About
                 </a>
               </Typography>
-              <Typography variant="h5" className={classes.title}>
-                <a href="#experience" className={classes.link}>
+              <Typography variant='h5' className={classes.title}>
+                <a href='#experience' className={classes.link}>
                   Experience
                 </a>
               </Typography>
-              <Typography variant="h5" className={classes.title}>
-                <a href="#projects" className={classes.link}>
+              <Typography variant='h5' className={classes.title}>
+                <a href='#projects' className={classes.link}>
                   Projects
                 </a>
               </Typography>
@@ -119,15 +124,15 @@ export default function Layout() {
         <div className={classes.content}>
           <div className={classes.toolbar} />
           <BigPicture />
-          <div id="about">
+          <div id='about'>
             <About />
           </div>
 
-          <div id="experience">
+          <div id='experience'>
             <Experience />
           </div>
 
-          <div id="projects">
+          <div id='projects'>
             <Projects />
           </div>
           {/*  */}

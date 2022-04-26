@@ -7,9 +7,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
 
 const OI_BULLETPOINTS = [
-  'Worked on a web app to efficiently analyze angiographic images and perform 3D volume reconstruction using various image processing techniques and computer graphics algorithms.',
-  'Maintained and developed the internal Radiology CoreLab web app.',
-  'Employed workable software solutions on a system that has processed over 1,000,000 medical images.',
+  'Maintained and developed new features of the internal medical imaging  web application',
+  'Developed a mobile application to efficiently analyze angiographic images and perform 3D volume reconstruction',
 ]
 
 const FLIR_BULLETPOINTS = [

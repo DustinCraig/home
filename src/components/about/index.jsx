@@ -46,63 +46,72 @@ export default function About() {
         xs={12}
         container
         spacing={0}
-        direction="column"
-        alignItems="center"
-        justify="center"
+        direction='column'
+        alignItems='center'
+        justify='center'
         className={classes.grid}
       >
         <center>
-          <Typography className={classes.header} variant="h3">
+          <Typography className={classes.header} variant='h3'>
             About Me
           </Typography>
         </center>
-        <Avatar alt="Dustin Craig" src={Image} className={classes.avatar} />
+        <Avatar alt='Dustin Craig' src={Image} className={classes.avatar} />
 
-        <Card className={classes.card} variant="outline">
+        <Card className={classes.card} variant='outline'>
           <CardContent>
             <Typography className={classes.title}>
               <Typography paragraph>
-                <b>Hello!</b> My name is Dustin and I am currently a college senior studying
-                Computer Science. I am highly interested in the fields of{' '}
-                <u>Software Engineering</u>, <u>Computer Graphics</u> and <u>Data Science</u>. I
-                have a great passion for what I do and I take a large amount of pride in my work. 
-                I am looking for opportunities to gain experience and solve interesting problems.
+                <b style={{ fontSize: 35 }}>Hello! </b> My name is Dustin. I am
+                highly interested in the fields of <u>Software Engineering</u>,
+                and <u>Computer Graphics</u>. I have a great passion for what I
+                do, and I take a large amount of pride in my work. I am looking
+                for opportunities to gain experience and solve interesting
+                problems.
                 <br />
-                <br />I have professional experience with the following technologies:
+                <br />I have professional experience with the following
+                technologies:
               </Typography>
 
               <ul>
                 <li>React.js</li>
+                <li>React Native</li>
                 <li>WebGL</li>
                 <li>TypeScript</li>
                 <li>Angular JS/7+</li>
                 <li>Python</li>
                 <li>C/C++</li>
-                <li>.NET Framework using C#</li>
+                <li>.NET Framework</li>
                 <li>CouchDB</li>
-                <li>SQL</li>
+                <li>SQL Server</li>
               </ul>
-              <h2 style={{ textAlign: 'center' }}>
-                <a
-                  href="https://docs.google.com/document/d/1n2BAmpFuUchw4EOFzBa52wLKmG3VN9_oxa15QSwzIwQ/edit?usp=sharing"
-                  style={{ color: HEADERCOLOR }}
-                  target="_blank"
-                >
-                  Full Resume
-                </a>
-              </h2>
+
               <br />
               <center>
                 Feel free to contact me at{' '}
-                <a href="mailto:dustincraig16@gmail.com" style={{ color: TEXTCOLOR }}>
+                <a
+                  href='mailto:dustincraig16@gmail.com'
+                  style={{ color: TEXTCOLOR }}
+                >
                   dustincraig16@gmail.com
                 </a>
                 !
               </center>
             </Typography>
+            <div
+              style={{
+                display: 'flex',
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100%',
+                marginTop: 10,
+              }}
+            >
+              <SocialButtons />
+            </div>
           </CardContent>
         </Card>
-        <SocialButtons />
         <div stlye={{ marginBottom: 10 }} />
       </Grid>
     </div>
