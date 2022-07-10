@@ -32,9 +32,6 @@ function BigPicture(props) {
         <Typography variant='h3' component='h3' className={classes.text}>
           Software Engineer
         </Typography>
-        <Typography variant='h5' component='h5' className={classes.text}>
-          <i>Design oriented and solution driven.</i>
-        </Typography>
       </div>
     )
   else
@@ -55,9 +52,6 @@ function BigPicture(props) {
         </Typography>
         <Typography variant='h4' component='h4' className={classes.text}>
           Software Engineer
-        </Typography>
-        <Typography variant='h6' component='h6' className={classes.text}>
-          <i>Design oriented and solution driven.</i>
         </Typography>
       </div>
     )

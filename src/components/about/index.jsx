@@ -8,6 +8,21 @@ import { SocialButtons } from '../socialButtons'
 import { BACKGROUNDCOLOR, TEXTCOLOR, HEADERCOLOR } from '../../constants'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
+import Chip from '@material-ui/core/Chip'
+
+const LANGUAGES = [
+  'React.js',
+  'React Native',
+  'ASP.NET Core',
+  'Azure',
+  'C#',
+  'WebGL',
+  'SQL Server',
+  'TypeScript',
+  'Python',
+  'CouchDB',
+  'Angular JS/7+',
+]
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -23,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: BACKGROUNDCOLOR,
   },
   card: {
-    width: '70%',
+    width: '50%',
+    padding: 4,
     margin: 30,
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
   },
@@ -73,18 +89,27 @@ export default function About() {
                 technologies:
               </Typography>
 
-              <ul>
-                <li>React.js</li>
-                <li>React Native</li>
-                <li>WebGL</li>
-                <li>TypeScript</li>
-                <li>Angular JS/7+</li>
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>.NET Framework</li>
-                <li>CouchDB</li>
-                <li>SQL Server</li>
-              </ul>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Grid
+                  container
+                  justifyContent='center'
+                  alignItems='center'
+                  spacing={1}
+                  style={{ width: '70%' }}
+                >
+                  {LANGUAGES.map((e) => (
+                    <Grid item xs={3}>
+                      <Chip color='primary' label={e} />
+                    </Grid>
+                  ))}
+                </Grid>
+              </div>
 
               <br />
               <center>
@@ -112,7 +137,6 @@ export default function About() {
             </div>
           </CardContent>
         </Card>
-        <div stlye={{ marginBottom: 10 }} />
       </Grid>
     </div>
   )

@@ -25,7 +25,7 @@ const PREVO_BULLETPOINTS = [
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    marginTop: 60,
+    marginTop: 20,
     color: HEADERCOLOR,
     fontSize: 60,
   },
@@ -47,7 +47,7 @@ export default function Experience() {
       <Typography className={classes.header} variant='h3'>
         Experience
       </Typography>
-      <br />
+
       <JobCard
         title={'Software Engineer'}
         company={'Oculus Imaging'}
