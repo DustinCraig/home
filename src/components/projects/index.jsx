@@ -67,7 +67,7 @@ export default function Projects() {
               <ProjectCard
                 title={'This website!'}
                 description={
-                  'I built this website using React.JS and Material-UI'
+                  'I built this website using React.JS and Material-UI (V4)'
                 }
                 link={'https://github.com/DustinCraig/home'}
               />
