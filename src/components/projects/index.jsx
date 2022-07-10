@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: BACKGROUNDCOLOR,
   },
   header: {
-    marginTop: 60,
+    marginTop: 20,
     color: HEADERCOLOR,
     fontSize: 60,
   },
