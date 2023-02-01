@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import Avatar from '@material-ui/core/Avatar'
 import Image from '../../assets/images/avatar.jpeg'
 import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles'
 import { SocialButtons } from '../socialButtons'
 import { BACKGROUNDCOLOR, TEXTCOLOR, HEADERCOLOR } from '../../constants'
@@ -62,33 +63,56 @@ export default function About() {
         xs={12}
         container
         spacing={0}
-        direction='column'
-        alignItems='center'
-        justify='center'
+        direction="column"
+        alignItems="center"
+        justify="center"
         className={classes.grid}
       >
         <center>
-          <Typography className={classes.header} variant='h3'>
+          <Typography className={classes.header} variant="h3">
             About Me
           </Typography>
         </center>
-        <Avatar alt='Dustin Craig' src={Image} className={classes.avatar} />
+        <Avatar alt="Dustin Craig" src={Image} className={classes.avatar} />
 
-        <Card className={classes.card} variant='outline'>
+        <Card className={classes.card} variant="outline">
           <CardContent>
             <Typography className={classes.title}>
-              <Typography paragraph>
-                <b style={{ fontSize: 35 }}>Hello! </b> My name is Dustin. I am
-                highly interested in the fields of <u>Software Engineering</u>,
-                and <u>Computer Graphics</u>. I have a great passion for what I
-                do, and I take a large amount of pride in my work. I am looking
-                for opportunities to gain experience and solve interesting
-                problems.
-                <br />
-                <br />I have professional experience with the following
-                technologies:
+              <Typography variant="h3" style={{ padding: 5 }}>
+                Hello!
               </Typography>
+              <Divider />
 
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  paddingLeft: '10%',
+                  paddingRight: '10%',
+                  marginTop: 45,
+                  marginBottom: 25,
+                }}
+              >
+                <Typography variant="h5" style={{ padding: 1 }}>
+                  My name is Dustin. I am highly interested in all things Software Engineering and
+                  Computer Graphics. I have a great passion for what I do, and I take a large amount
+                  of pride in my work.
+                </Typography>
+              </div>
+
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginBottom: 2,
+                }}
+              >
+                <Typography variant="h5" style={{ marginBottom: 15 }}>
+                  I have professional experience with the following technologies
+                </Typography>
+              </div>
               <div
                 style={{
                   display: 'flex',
@@ -98,14 +122,14 @@ export default function About() {
               >
                 <Grid
                   container
-                  justifyContent='center'
-                  alignItems='center'
+                  justifyContent="center"
+                  alignItems="center"
                   spacing={1}
                   style={{ width: '70%' }}
                 >
                   {LANGUAGES.map((e) => (
                     <Grid item xs={3}>
-                      <Chip color='primary' label={e} />
+                      <Chip color="primary" label={e} />
                     </Grid>
                   ))}
                 </Grid>
@@ -114,10 +138,7 @@ export default function About() {
               <br />
               <center>
                 Feel free to contact me at{' '}
-                <a
-                  href='mailto:dustincraig16@gmail.com'
-                  style={{ color: TEXTCOLOR }}
-                >
+                <a href="mailto:dustincraig16@gmail.com" style={{ color: TEXTCOLOR }}>
                   dustincraig16@gmail.com
                 </a>
                 !

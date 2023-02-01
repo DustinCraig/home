@@ -1,10 +1,14 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import JobCard from './jobCard'
 import { makeStyles } from '@material-ui/core/styles'
 
 import { BACKGROUNDCOLOR, HEADERCOLOR } from '../../constants'
+
+const ATLASSIAN_BULLETPOINTS = [
+  'Trusted with sunsetting deprecated services. This included cleaning up references in the code base, making sure assets are moved to the correct location, and monitoring metrics post-deletion to ensure that there is no degradation in performance',
+]
 
 const OI_BULLETPOINTS = [
   'Maintained and developed new features of the internal medical imaging  web application',
@@ -39,27 +43,36 @@ export default function Experience() {
       xs={12}
       container
       spacing={0}
-      direction='column'
-      alignItems='center'
-      justify='center'
+      direction="column"
+      alignItems="center"
+      justify="center"
       style={{ backgroundColor: BACKGROUNDCOLOR }}
     >
-      <Typography className={classes.header} variant='h3'>
+      <Typography className={classes.header} variant="h3">
         Experience
       </Typography>
 
       <JobCard
+        title={'Frontend Engineer - Confluence Cloud Performance'}
+        company={'Atlassian'}
+        dates={['December 2022', 'Present']}
+        bulletPoints={ATLASSIAN_BULLETPOINTS}
+      />
+
+      <JobCard
         title={'Software Engineer'}
         company={'Oculus Imaging'}
-        dates={['April 2020', 'Present']}
+        dates={['April 2020', 'December 2022']}
         bulletPoints={OI_BULLETPOINTS}
       />
+
       <JobCard
         title={'Software Engineering Intern'}
         company={'FLIR Detection'}
         dates={['February 2019', 'January 2020']}
         bulletPoints={FLIR_BULLETPOINTS}
       />
+
       <JobCard
         title={'Software Engineering Intern'}
         company={'Prevo Technologies'}
